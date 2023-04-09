@@ -15,7 +15,6 @@ export class HistoryComponent {
     //Add 'implements OnInit' to the class.
     this.sharedService.sendHistory.subscribe((res: any) => {
       this.history = res;
-      console.log('reccc',this.history);
     });
   }
   cacheClear() {

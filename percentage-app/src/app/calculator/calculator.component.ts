@@ -43,10 +43,10 @@ export class CalculatorComponent {
       }
       percentVal = this.typeOneInput1 / 100;
        this.typeOneans =  percentVal * this.typeOneInput2;
-       this.history.push({
+       this.history.unshift({
         input1: this.typeOneInput1,
         input2: this.typeOneInput2,
-        ans:  Math.ceil(this.typeOneans)
+        ans: this.typeOneans
        });
     }
     if(mode === 'type2') {
@@ -58,10 +58,10 @@ export class CalculatorComponent {
       }
       percentVal = this.typeTwoInput1 / this.typeTwoInput2;
        this.typeTwoans =  percentVal * 100;
-       this.history.push({
+       this.history.unshift({
         input1: this.typeTwoInput1,
         input2: this.typeTwoInput2,
-        ans:  Math.ceil(this.typeTwoans)
+        ans:  this.typeTwoans
        });
     }
     if(mode === 'type3') {
@@ -73,10 +73,10 @@ export class CalculatorComponent {
       }
       percentVal = this.typeThreeInput2 / 100;
        this.typeThreeans =  this.typeThreeInput1 / percentVal;
-       this.history.push({
+       this.history.unshift({
         input1: this.typeThreeInput1,
         input2: this.typeThreeInput2,
-        ans:  Math.ceil(this.typeThreeans)
+        ans:  this.typeThreeans
        });
     }
     if(mode === 'type4') {
@@ -88,15 +88,13 @@ export class CalculatorComponent {
       }
       numerator = Math.abs(this.typeFourInput1 - this.typeFourInput2);
       denominator = Math.abs(this.typeFourInput1 + this.typeFourInput2);
-      console.log('num-',numerator, 'den-', denominator);
       this.typeFourans = (numerator / (denominator/2)) * 100;
-      this.history.push({
+      this.history.unshift({
         input1: this.typeFourInput1,
         input2: this.typeFourInput2,
-        ans: Math.ceil(this.typeFourans)
+        ans: this.typeFourans
        });
     }
     this.sharedService.sendHistory.next(this.history);
-    console.log('histiry',this.history);
   }
 }
