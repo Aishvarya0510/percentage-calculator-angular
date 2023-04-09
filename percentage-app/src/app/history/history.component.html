@@ -1,1 +1,18 @@
-<p>history works!</p>
+<div class="history-wrap background">
+    <div class="d-flex justify-content-between">
+        <h3>History</h3>
+        <div class="bg-trash" (click)="cacheClear()" *ngIf="history.length >= 1">
+            <span class="material-symbols-outlined white">
+        delete
+        </span>
+        </div>
+
+    </div>
+    <ng-container *ngFor="let item of history">
+        <div class="percent-item">
+            <div class="percent-mb">What is <span class="blue">&nbsp;{{item.input1}}%</span>&nbsp; of <span class="blue">&nbsp;{{item.input2}}</span></div>
+            <span class="blue ans">{{item.ans}}</span>
+        </div>
+    </ng-container>
+
+</div>

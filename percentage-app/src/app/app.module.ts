@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ExplanationComponent } from './explanation/explanation.component';
+import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ExplanationComponent } from './explanation/explanation.component';
     CalculatorComponent,
     HeaderComponent,
     AboutUsComponent,
-    ExplanationComponent
+    ExplanationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

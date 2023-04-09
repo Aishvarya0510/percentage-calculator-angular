@@ -1,8 +1,130 @@
-<div class="row">
-    <div class="col-lg-8 col-md-6">
-        calculator works
+<div class="row space-margin-top-bottom">
+    <div class="col-lg-9 col-md-12 space-margin-cal d-flex flex-dir">
+        <div>
+            <h2>
+                Percentage Calculator
+            </h2>
+            <div class="row align-items-center justify-content-center cal-space-mb">
+                <div class="col-lg-6 col-md-12">
+                    <div class="percent-row">
+                        <div class="d-flex percent-box align-items-center">
+                            <span class="space percent-text">What is</span>
+                            <div class="relative">
+                                <input type="number" class="percent-input input-percent-padding" [(ngModel)]="typeOneInput1">
+                                <span class="material-symbols-outlined absolute percent-icon bold">
+                                percent
+                                </span>
+                            </div>
+                            <span class="percent-text space-margin-percent-txt">of</span>
+                            <input type="number" class="percent-input" [(ngModel)]="typeOneInput2">
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-lg-1 space-p-0">
+                    <button type="button" (click)="calc('type1')">Calc</button>
+
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <input type="number" class="percent-input w-100 result" [ngModel]="typeOneans" readonly>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center cal-space-mb">
+                <div class="col-lg-6 col-md-12">
+                    <div class="percent-row">
+                        <div class="d-flex percent-box align-items-center">
+                            <div class="relative">
+                                <input type="number" class="percent-input" [(ngModel)]="typeTwoInput1">
+                            </div>
+                            <span class="percent-text space-margin-percent-txt space">is what % of</span>
+                            <input type="number" class="percent-input" [(ngModel)]="typeTwoInput2">
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-lg-1 space-p-0">
+                    <button type="button" (click)="calc('type2')">Calc</button>
+
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="relative type-three">
+                        <input type="number" class="percent-input w-100 result input-percent-padding" [ngModel]="typeTwoans" readonly>
+                        <span class="material-symbols-outlined absolute percent-icon bold">
+                          percent
+                          </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center cal-space-mb">
+                <div class="col-lg-6 col-md-12">
+                    <div class="percent-row">
+                        <div class="d-flex percent-box align-items-center">
+                            <div class="relative">
+                                <input type="number" class="percent-input" [(ngModel)]="typeThreeInput1">
+                            </div>
+                            <span class="percent-text space-margin-percent-txt space">is</span>
+                            <div class="relative">
+
+                                <input type="number" class="percent-input input-percent-padding" [(ngModel)]="typeThreeInput2">
+                                <span class="material-symbols-outlined absolute percent-icon bold">
+                                    percent
+                                    </span>
+                            </div>
+
+                            <span class="percent-text space-margin-percent-txt">of what</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-lg-1 space-p-0">
+                    <button type="button" (click)="calc('type3')">Calc</button>
+
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="relative type-three">
+                        <input type="number" class="percent-input w-100 result input-percent-padding" [ngModel]="typeThreeans" readonly>
+                        <span class="material-symbols-outlined absolute percent-icon bold">
+                          percent
+                          </span>
+                    </div>
+                </div>
+            </div>
+            <h2 class="percent-diff-heading-mt">
+                Percentage Difference
+            </h2>
+            <div class="row align-items-center justify-content-center cal-space-mb">
+                <div class="col-lg-6 col-md-12">
+                    <div class="percent-row">
+                        <div class="d-flex percent-box align-items-center">
+                            <span class="percent-text space-margin-percent-txt space">Val 1</span>
+                            <div class="relative">
+                                <input type="number" class="percent-input" [(ngModel)]="typeFourInput1">
+                            </div>
+                            <span class="percent-text space-margin-percent-txt space">Val 2</span>
+                            <input type="number" class="percent-input" [(ngModel)]="typeFourInput2">
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-lg-1 space-p-0">
+                    <button type="button" (click)="calc('type4')">Calc</button>
+
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="relative type-three">
+                        <input type="number" class="percent-input w-100 result input-percent-padding" [ngModel]="typeFourans" readonly>
+                        <span class="material-symbols-outlined absolute percent-icon bold">
+                          percent
+                          </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pos-fixed">
+            <app-footer></app-footer>
+        </div>
     </div>
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-3 col-md-12">
         <app-history></app-history>
     </div>
 </div>

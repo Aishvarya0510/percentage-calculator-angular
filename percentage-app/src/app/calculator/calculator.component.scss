@@ -1,0 +1,94 @@
+input {
+    width: 111.42px;
+    border: 1px solid #CACACA;
+    border-radius: 5px;
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+.space {
+    white-space: nowrap;
+}
+
+.percent-input {
+    position: relative;
+    padding: 5px;
+}
+
+.space-margin-percent-txt {
+    margin: 0px 10px;
+}
+
+.percent-icon {
+    color: var(--primary-blue);
+    right: 4px;
+    top: 7px;
+    font-size: 1.2rem;
+}
+
+.percent-diff-heading-mt {
+    margin-top: 32px;
+}
+
+.pos-fixed {
+    position: fixed;
+    bottom: 10px;
+}
+
+.percent-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.type-three {
+    .percent-icon {
+        top: 15px;
+    }
+}
+
+.percent-box {
+    background: #F1F1F1;
+    border-radius: 10px;
+    padding: 10px 23px;
+    >span {
+        margin-right: 10px;
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.space-margin-top-bottom {
+    margin: 35px 0px;
+}
+
+.space-margin-cal {
+    margin-top: 20px;
+}
+
+.result {
+    height: 51px;
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+.cal-space-mb {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: var(--heading-font);
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.space-padding-input {
+    padding: 5px;
+}
+
+.input-percent-padding {
+    padding-right: 26px;
+}
