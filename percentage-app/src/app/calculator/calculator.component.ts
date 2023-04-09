@@ -46,7 +46,8 @@ export class CalculatorComponent {
        this.history.unshift({
         input1: this.typeOneInput1,
         input2: this.typeOneInput2,
-        ans: this.typeOneans
+        ans: this.typeOneans,
+        type: 'type1'
        });
     }
     if(mode === 'type2') {
@@ -61,7 +62,8 @@ export class CalculatorComponent {
        this.history.unshift({
         input1: this.typeTwoInput1,
         input2: this.typeTwoInput2,
-        ans:  this.typeTwoans
+        ans:  this.typeTwoans,
+        type: 'type2'
        });
     }
     if(mode === 'type3') {
@@ -76,7 +78,8 @@ export class CalculatorComponent {
        this.history.unshift({
         input1: this.typeThreeInput1,
         input2: this.typeThreeInput2,
-        ans:  this.typeThreeans
+        ans:  this.typeThreeans,
+        type: 'type3'
        });
     }
     if(mode === 'type4') {
@@ -92,7 +95,8 @@ export class CalculatorComponent {
       this.history.unshift({
         input1: this.typeFourInput1,
         input2: this.typeFourInput2,
-        ans: this.typeFourans
+        ans: this.typeFourans,
+        type: 'type4'
        });
     }
     this.sharedService.sendHistory.next(this.history);

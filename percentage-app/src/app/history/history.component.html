@@ -10,7 +10,10 @@
     </div>
     <ng-container *ngFor="let item of history">
         <div class="percent-item">
-            <div class="percent-mb">What is <span class="blue">&nbsp;{{item.input1}}%</span>&nbsp; of <span class="blue">&nbsp;{{item.input2}}</span></div>
+            <div class="percent-mb" *ngIf="item.type === 'type1'">What is <span class="blue">&nbsp;{{item.input1}}%</span>&nbsp; of <span class="blue">&nbsp;{{item.input2}}</span></div>
+            <div class="percent-mb" *ngIf="item.type === 'type2'"><span class="blue">{{item.input1}}</span> is what % of <span class="blue">&nbsp;{{item.input2}}</span></div>
+            <div class="percent-mb" *ngIf="item.type === 'type3'"><span class="blue">{{item.input1}}</span> is <span class="blue">&nbsp;{{item.input2}}%</span> &nbsp;of &nbsp;what</div>
+            <div class="percent-mb" *ngIf="item.type === 'type4'">Percentage difference between <span class="blue">{{item.input1}}</span> and <span class="blue">{{item.input2}}</span> is</div>
             <span class="blue ans">{{item.ans}}</span>
         </div>
     </ng-container>
