@@ -1,1 +1,1 @@
-# percentage-calculator-angular
+# percentage-calculator
