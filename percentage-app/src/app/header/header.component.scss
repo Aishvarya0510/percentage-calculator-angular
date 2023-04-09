@@ -1,0 +1,27 @@
+@import url('../../variables.scss');
+.header-wrap {
+    background-color: var(--primary-blue);
+    padding: 10px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.percent-logo {
+    background-color: var(--secondary-blue);
+    width: 40px;
+    height: 38.67px;
+    border-radius: 7px;
+    color: var(--white);
+}
+
+.percent-option {
+    width: 127px;
+}
+
+.link-option {
+    border-radius: 5px;
+    padding: 5px 13px;
+    background-color: var(--white);
+    color: var(--primary-blue);
+    font-weight: 600;
+}
