@@ -1,9 +1,12 @@
 @import url('../../variables.scss');
 .header-wrap {
     background-color: var(--primary-blue);
-    padding: 10px;
     color: var(--white);
     font-size: 20px;
+}
+
+.spacing-mr {
+    margin-right: 10px;
 }
 
 .percent-logo {
@@ -16,6 +19,12 @@
 
 .percent-option {
     width: 127px;
+    cursor: pointer;
+}
+
+.option-active {
+    background: linear-gradient(180deg, #0060A5 0%, #0076CB 100%);
+    padding: 17px 13px;
 }
 
 .link-option {

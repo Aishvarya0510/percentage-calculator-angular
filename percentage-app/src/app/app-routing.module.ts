@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ExplanationComponent } from './explanation/explanation.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,9 @@ const routes: Routes = [
   },
   {
     path:'aboutus',component:AboutUsComponent
+  },
+  {
+    path:'explanation',component:ExplanationComponent
   },
 ];
 
